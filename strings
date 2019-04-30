@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">Fit4You</string>
+    <string name="app">Fit4You</string>
+
+    <string name="new_user">New User</string>
+    <color name="blue">#0009FF</color>
+    <string name="button_login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="home">Home</string>
+    <string name="workouts">Workouts</string>
+    <string name="profile">Profile</string>
+    <string name="cont">Continue</string>
+    <color name="white">#ffffff</color>
+    <string name="instruction">Choose a Body Part!</string>
+    <string name="warning">Warning! Working the same body part for more than two days in a row is not advised!</string>
+
+    <string name="my_name">Amilcar Pojoy</string>
+    <string name="my_height_feet">5</string>
+    <string name="my_height_inches">7</string>
+    <string name="my_sex">Male</string>
+    <string name="my_dob">03/15/1997</string>
+    <string name="my_weight">155</string>
+    <string name="my_goal_weight">150</string>
+    <string name="update_profile">Update Info</string>
+    <string name="the_inches">in.</string>
+    <string name="the_feet">ft.</string>
+    <string name="update">update</string>
+
+    <string name="create_user">Create User</string>
+    <string name="enter_name">Enter Username</string>
+    <string name="enter_height">Enter Height</string>
+    <string name="enter_sex">Enter Sex</string>
+    <string name="enter_dob">Enter Date of Birth</string>
+    <string name="enter_weight">Enter Weight</string>
+    <string name="enter_my_goal_weight">Enter Goal</string>
+
+    <string-array name="workout_abs">
+        <item>Russian Twists:     3 to 4 sets    8 to 12 reps</item>
+        <item>Sit Ups:     3 to 4 sets    8 to 12 reps</item>
+        <item>Plank:     1 minute alternate with each workout</item>
+        <item>Panther Shoulder Tap:     3 to 4 sets    8 to 12 reps</item>
+        <item>Butterfly Sit Up:     3 to 4 sets    8 to 12 reps</item>
+        <item>Deadbug:     3 to 4 sets    8 to 12 reps</item>
+        <item>Half knee woodchop:     3 to 4 sets    8 to 12 reps</item>
+        <item>High boat to low boat:     3 to 4 sets    8 to 12 reps</item>
+        <item>Jackknife:     3 to 4 sets    8 to 12 reps</item>
+        <item>Leg raise:     3 to 4 sets    8 to 12 reps</item>
+        <item>Row your boat:     3 to 4 sets    8 to 12 reps</item>
+        <item>Single leg jackknife:     3 to 4 sets    8 to 12 reps</item>
+        <item>Plank tap:     1 minute alternate with other workout</item>
+        <item>Hip dip:     3 to 4 sets    8 to 12 reps</item>
+        <item>Scissor legs:     1 minute alternate with other workout</item>
+    </string-array>
+
+    <string-array name="workout_cardio">
+        <item>Jogging        15mins</item>
+        <item>EllipticalRunning    15mins</item>
+        <item>Stair climber        10mins</item>
+        <item>Jumping rope        15mins</item>
+        <item>Cycling        30mins</item>
+        <item>Swimming        30mins</item>
+        <item>HIIT            10mins</item>
+        <item>Kickboxing        20mins</item>
+        <item>Indoor rowing        30mins</item>
+        <item>Jumping jacks          5mins</item>
+
+    </string-array>
+
+    <string-array name="workout_back">
+        <item>Band Bent Over Row:     3 to 4 sets    8 to 12 reps</item>
+        <item>Renegade Row:     3 to 4 sets    8 to 12 reps</item>
+        <item>Dumbbell Single Arm Row:     3 to 4 sets    8 to 12 reps</item>
+        <item>Chest-Supported Dumbbell Row:     3 to 4 sets    8 to 12 reps</item>
+        <item>Bent-Over Barbell Rows:     3 to 4 sets    8 to 12 reps</item>
+        <item>Inverted Row:     3 to 4 sets    8 to 12 reps</item>
+        <item>Pull Up/Chin Up:     3 to 4 sets    8 to 12 reps</item>
+        <item>Lat Pulldown:     3 to 4 sets    8 to 12 reps</item>
+        <item>Kettlebell Swings:     3 to 4 sets    8 to 12 reps</item>
+        <item>Front Squat:     3 to 4 sets    8 to 12 reps</item>
+        <item>Deadlift:     3 to 4 sets    8 to 12 reps</item>
+        <item>Kneeling Lat Pulldown:     3 to 4 sets    8 to 12 reps</item>
+        <item>Seated Cable Row with Pause:     3 to 4 sets    8 to 12 reps</item>
+        <item>Bent Over Underhand Barbell Row:     3 to 4 sets    8 to 12 reps</item>
+        <item>Bent Over Dumbbell Alternating Row:     3 to 4 sets    8 to 12 reps</item>
+    </string-array>
+
+    <string-array name="workout_legs">
+        <item>Front Squat:     3 to 4 sets    8 to 12 reps</item>
+        <item>Bulgarian Split Squat:     3 to 4 sets    8 to 12 reps</item>
+        <item>Romanian Deadlift:     3 to 4 sets    8 to 12 reps</item>
+        <item>Squat:     3 to 4 sets    8 to 12 reps</item>
+        <item>Dumbbell Step up:     3 to 4 sets    8 to 12 reps</item>
+        <item>Swiss Ball Leg Curler:     3 to 4 sets    8 to 12 reps</item>
+        <item>Leg Press:     3 to 4 sets    8 to 12 reps</item>
+        <item>Bodyweight Calf Raise:     3 to 4 sets    8 to 12 reps</item>
+        <item>Walking Lunge:     3 to 4 sets    8 to 12 reps</item>
+        <item>Pause Squat:     3 to 4 sets    8 to 12 reps</item>
+        <item>Reverse Lunge:     3 to 4 sets    8 to 12 reps</item>
+        <item>Barbell Calf Raise:     3 to 4 sets    8 to 12 reps</item>
+        <item>Skater Squat:     3 to 4 sets    8 to 12 reps</item>
+        <item>Jumping Calf Raise:     3 to 4 sets    8 to 12 reps</item>
+        <item>Barbell Hip Thrust:     3 to 4 sets    8 to 12 reps</item>
+    </string-array>
+
+    <string-array name="workout_chest">
+        <item>Barbell Bench Press:   3 to 4 sets    8 to 12 reps</item>
+        <item>Smith machine incline press:     3 to 4 sets    8 to 12 reps</item>
+        <item>Cable crossover:     3 to 4 sets    8 to 12 reps</item>
+        <item>Chest press machine:     3 to 4 sets    8 to 12 reps</item>
+        <item>Dumbbell flye:     3 to 4 sets    8 to 12 reps</item>
+        <item>Low cable crossover:     3 to 4 sets    8 to 12 reps</item>
+        <item>Low incline press:     3 to 4 sets    8 to 12 reps</item>
+        <item>Pullover:     3 to 4 sets    8 to 12 reps</item>
+        <item>Plate press out:     3 to 4 sets    8 to 12 reps</item>
+        <item>Push up:     3 to 4 sets    8 to 12 reps</item>
+        <item>One-armed medicine ball push up:     3 to 4 sets    8 to 12 reps</item>
+        <item>Close-grip pushup:     3 to 4 sets    8 to 12 reps</item>
+        <item>Tricep extension:     3 to 4 sets    8 to 12 reps</item>
+        <item>Wide-grip dips:     3 to 4 sets    8 to 12 reps</item>
+        <item>Single arm dumbbell press:     3 to 4 sets    8 to 12 reps</item>
+    </string-array>
+
+    <string-array name="workout_arms">
+        <item>Hammer curl: 3 to 4 sets    8 to 12 reps</item>
+        <item>Close grip curl:     3 to 4 sets    8 to 12 reps</item>
+        <item>Suspension trainer triceps extension:     3 to 4 sets    8 to 12 reps</item>
+        <item>Diamond pushup:     3 to 4 sets    8 to 12 reps</item>
+        <item>Poundstone curl:     3 to 4 sets    8 to 12 reps</item>
+        <item>EZ bar preacher curl:     3 to 4 sets    8 to 12 reps</item>
+        <item>Overhead press:     3 to 4 sets    8 to 12 reps</item>
+        <item>Pullover Extension:     3 to 4 sets    8 to 12 reps</item>
+        <item>Decline triceps extension:     3 to 4 sets    8 to 12 reps</item>
+        <item>Lying triceps extension:     3 to 4 sets    8 to 12 reps</item>
+        <item>Face pull:     3 to 4 sets    8 to 12 reps</item>
+        <item>Underhand kickback:     3 to 4 sets    8 to 12 reps</item>
+        <item>Tate press:     3 to 4 sets    8 to 12 reps</item>
+        <item>Band lateral raise:     3 to 4 sets    8 to 12 reps</item>
+        <item>Triceps dip:     3 to 4 sets    8 to 12 reps</item>
+    </string-array>
+
+
+    <string-array name="profile_list">
+        <item name="user_name">Username</item>
+        <item name="height">Height</item>
+        <item name="sex">Sex</item>
+        <item name="birthday">Date of Birth</item>
+        <item name="current_weight">Current Weight (in lbs)</item>
+        <item name="weight_goal">Weight Goal (in lbs)</item>
+    </string-array>
+
+    <string-array name="bodyparts">
+        <item>Legs</item>
+        <item>Arms</item>
+        <item>Chest</item>
+        <item>Back</item>
+        <item>Core</item>
+    </string-array>
+
+
+</resources>
