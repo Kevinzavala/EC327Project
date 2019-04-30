@@ -1,0 +1,82 @@
+package com.example.main_screen;
+
+import android.content.Intent;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.MenuItem;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+
+public class workouts extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_workouts);
+
+
+        ListView listView;
+        TextView warning = findViewById(R.id.warning);
+
+        final String[] listofbodyparts;
+        BottomNavigationView navigation = findViewById(R.id.navigation);
+
+        //creates the list view of the body parts
+        listView = (ListView) findViewById(R.id.listview);
+        listofbodyparts = getResources().getStringArray(R.array.bodyparts);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listofbodyparts);
+        listView.setAdapter(arrayAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                view.setSelected(true);
+                
+                //sets new activities for each body part if pressed
+                if(position==0) {
+                    Intent myintent = new Intent(view.getContext(),legs.class);
+                    startActivityForResult(myintent,0);
+                }
+                if(position==1) {
+                    Intent myintent2 = new Intent(view.getContext(),arms.class);
+                    startActivityForResult(myintent2,1);
+                }
+                if(position==2) {
+                    Intent myintent3 = new Intent(view.getContext(),chest.class);
+                    startActivityForResult(myintent3,2);
+                }
+                if(position==3) {
+                    Intent myintent4 = new Intent(view.getContext(),back.class);
+                    startActivityForResult(myintent4,3);
+                }
+                if(position==4) {
+                    Intent myintent5 = new Intent(view.getContext(),core.class);
+                    startActivityForResult(myintent5,4);
+                }
+            }
+        });
+        
+        //sets the navigation bar
+        navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.navigation_home:
+                        Intent int1 = new Intent(workouts.this, main_menu.class);
+                        startActivity(int1);
+                        break;
+                    case R.id.navigation_profile:
+                        Intent int2 = new Intent(workouts.this, profile.class);
+                        startActivity(int2);
+                        break;
+                }
+                return false;
+            }
+        });
+    }
+}
+
