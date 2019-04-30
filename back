@@ -28,7 +28,7 @@ public class back extends AppCompatActivity {
         Random random = new Random();
         int one, two, three, four, five, six;
 
-        //random numbers from 0-10 and 0-15
+        //random numbers from 0-9 and 0-14
         one = random.nextInt(10);
         two = random.nextInt(10);
         three = random.nextInt(15);
