@@ -26,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
         Button b1 = findViewById(R.id.button2);
 
         newuserbut = findViewById(R.id.button);
-
+        
+        //security measure that will not allow random users into the app
+        //toast messages will appear telling the user their username is not valid or that it is redirecting them
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //this button will open a window where the user will be able to create a new profile
         newuserbut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
