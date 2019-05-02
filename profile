@@ -11,8 +11,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class profile extends AppCompatActivity {
+
+    int cal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -23,9 +27,20 @@ public class profile extends AppCompatActivity {
 
         String [] profilelist;
 
-        Button update = findViewById(R.id.update_info);
 
-        //sets the list view of the profile information
+        Button calorie = findViewById(R.id.calorie);
+        TextView ft = findViewById(R.id.hft);
+        TextView in = findViewById(R.id.hin);
+
+        cal = (14 * 70) + (5* 174) - (6 * 22) + 388;
+
+        calorie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"You must consume " + Integer.toString(cal) + " Everyday!",Toast.LENGTH_SHORT).show();
+            }
+        });
+
         listView = (ListView) findViewById(R.id.listview_profile);
         profilelist = getResources().getStringArray(R.array.profile_list);
 
@@ -42,7 +57,6 @@ public class profile extends AppCompatActivity {
 
         BottomNavigationView navigation = findViewById(R.id.navigation);
 
-        //sets the navigation bar
         navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -59,15 +73,6 @@ public class profile extends AppCompatActivity {
                 return false;
             }
         });
-      
-        //if pressed this will take the user to update their profile
-        update.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent int1 = new Intent(profile.this, uprofile.class);
-                startActivity(int1);
 
-            }
-        });
     }
 }
