@@ -31,9 +31,11 @@ public class profile extends AppCompatActivity {
         Button calorie = findViewById(R.id.calorie);
         TextView ft = findViewById(R.id.hft);
         TextView in = findViewById(R.id.hin);
-
+        
+        //calculates the users daily calorie intake
         cal = (14 * 70) + (5* 174) - (6 * 22) + 388;
 
+        //once pressed this will print the user's recommended daily calorie intake everyday
         calorie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +43,7 @@ public class profile extends AppCompatActivity {
             }
         });
 
+        //will print a list with the users data
         listView = (ListView) findViewById(R.id.listview_profile);
         profilelist = getResources().getStringArray(R.array.profile_list);
 
@@ -54,7 +57,7 @@ public class profile extends AppCompatActivity {
             }
         });
 
-
+        //sets up the navigation bar
         BottomNavigationView navigation = findViewById(R.id.navigation);
 
         navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
